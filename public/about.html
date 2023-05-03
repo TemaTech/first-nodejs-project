@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: whitesmoke;
+      height: 100vh;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
+      padding: 1em;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1em;
+      border-radius: 1em;
+      background-color: whitesmoke;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      align-items: center;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+    }
+
+    nav #logo {
+      font-style: italic;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav .nav-links {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      align-items: flex-start;
+    }
+
+    .container img {
+      height: 40vh;
+      width: auto;
+      object-fit: contain;
+      background-repeat: no-repeat;
+      border-radius: 1em;
+      background-color: whitesmoke;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+
+    .container p {
+      font-size: 1.1em;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" id="logo">My First Node Project</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact-me">Contact Me</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>About</h1>
+    <img src="https://images.unsplash.com/photo-1554107136-57b138ea99df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Painted Ladies, San Francisco, United States">
+    <p>You're currently on the About page.</p>
+  </div>
+</body>
+</html>
